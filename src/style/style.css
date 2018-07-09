@@ -1,8 +1,12 @@
 /*
-Theme Name: Theme Name
-Description: Theme description.
+Theme Name: CKBRNO
+Description: Cisteni klimatizace - Brno
 Version: 1.0
 Tags: responsive, clean, minimal, modern, documentation
 */
 
-/* @import 'typography'; */
+@import 'typography';
+@import "colors";
+@import "reset";
+@import "layout";
+@import "responsive";

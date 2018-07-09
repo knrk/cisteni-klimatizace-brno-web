@@ -1,0 +1,21 @@
+:root {
+    --text: #000;
+    --minor-text: #666;
+    --invert-color: #fff;
+    --invert-text-bg-color: #7597DB;
+    --minor-bg-color: #f4f4f4;
+
+    --menu-text-color: #000;
+    --menu-text-hover-color: #666;
+    --form-border-color: #4C9AFF;
+    --form-label-color: #6C798F;
+    --form-button-bg-color: #1006FF;
+
+    --list-bullet-color: #b6b6b6;
+    --table-zebra-bg-color: rgba(35, 35, 35, 0.1);
+
+    --emphasized-bg: #f4f4f4;
+
+    --footer-bg: #232323;
+    --footer-text: #fff;
+}

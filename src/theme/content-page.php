@@ -1,3 +1,1 @@
-<article class="page">
-	<?php the_content(); ?>
-</article>
+<?php the_content(); ?>

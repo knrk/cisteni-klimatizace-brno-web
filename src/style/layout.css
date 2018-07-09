@@ -1,0 +1,346 @@
+
+.emphasized {
+    background-color: var(--emphasized-bg);
+}
+
+.grid {
+    display: grid;
+    position: relative;
+}
+.grid.inside,
+.grid.outside {
+    grid-template-columns: 550px 1fr 1fr;
+}
+.grid.inside div {
+    grid-column: 2 / span 3;
+}
+.grid.inside img {
+    position: absolute;
+    left: -100px;
+    top: 0;
+}
+.grid.outside img {
+    position: absolute;
+}
+.grid.divided {
+    grid-template-columns: 1fr 1fr;
+}
+.grid.divided > div:last-child {
+    padding: 0;
+}
+.grid.divided > div:last-child h2 {
+    margin-left: 120px;
+    margin-top: 60px;
+}
+.grid.divided > div:first-child {
+    padding: 60px 120px;
+    background-color: var(--minor-bg-color);
+}
+.grid.divided > div:first-child h2 {
+    margin: 0;
+}
+
+.nav {
+    position: relative;
+}
+
+.nav ul {
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav ul a {
+    color: var(--menu-text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: 'Montserrat', 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.nav ul a:hover {
+    color: var(--menu-text-hover-color);
+}
+.nav .menu-item {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    line-height: 20px;
+}
+.nav .menu-item:before {
+    content: '';
+    height: 2px;
+    width: 40px;
+    display: flex;
+    background-color: transparent;
+    margin-right: 15px;
+}
+.nav .current-menu-item:before {
+    background-color: var(--menu-text-color);
+}
+
+header {
+    margin-top: 30px;
+}
+
+.content .no-padding {
+    padding: 0;
+    overflow: hidden;
+}
+
+header h3 {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: var(--invert-text-bg-color);
+    padding: 5px 10px;
+    color: var(--invert-color);
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+header > img {
+    margin: 0 auto;
+    display: flex;
+    width: 425px;
+    height: 135px;
+}
+
+header blockquote {
+    margin: 70px 0;
+}
+
+header blockquote img {
+    margin: 0 auto;
+    display: block;
+}
+
+header + div.content {
+    display: grid;
+    grid-template-columns: 1fr 490px;
+}
+
+.content:first-child {
+    margin: 0;
+}
+
+aside {
+    display: grid;
+    justify-content: right;
+}
+
+section h2 {
+    font-family: 'Montserrat', 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+section h4 {
+    font-weight: 600;
+}
+section > h4 {
+    text-transform: uppercase;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+section > h4:after {
+    content: "";
+    border: 1px solid black;
+    height: 0px;
+    margin: 5px;
+    flex: 1;
+}
+
+section h5 {
+    font-weight: 400;
+}
+
+section h5 strong {
+    font-weight: 700;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 140px;
+}
+
+section ul li {
+    display: flex;
+    align-items: center;
+}
+
+section ul li:before {
+    content: '';
+    height: 2px;
+    width: 30px;
+    display: flex;
+    background-color: var(--list-bullet-color);
+    margin-right: 30px;
+}
+
+section dl {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    line-height: 22px; 
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+table tr:nth-child(odd) td {
+    background-color: var(--table-zebra-bg-color);
+}
+
+table th, table td {
+    padding: 0 0 0 50px;
+    line-height: 40px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+}
+table th {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--minor-text);
+    font-weight: 400;
+    vertical-align: bottom;
+    line-height: 20px;
+}
+
+.request-form nf-fields-wrap {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+.request-form nf-field:nth-child(1),
+.request-form nf-field:nth-child(2),
+.request-form nf-field:nth-child(3),
+.request-form nf-field:nth-child(9),
+.request-form nf-field:nth-child(10) {
+    grid-column: 1 / span 6;
+}
+
+.request-form nf-field:nth-child(4),
+.request-form nf-field:nth-child(5) {
+    grid-column: span 3;
+}
+
+
+.request-form nf-field:nth-child(6),
+.request-form nf-field:nth-child(7),
+.request-form nf-field:nth-child(8) {
+    grid-column: span 2;
+}
+
+.request-form nf-field .nf-field-label {
+    margin-bottom: 3px;
+}
+.request-form nf-field .nf-field-label label {
+    font-weight: 400;
+}
+
+.request-form .nf-form-fields-required {
+    display: none;
+}
+.request-form .nf-error-msg {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.request-form input[type=text],
+.request-form input[type=email],
+.request-form input[type=tel],
+.request-form input[type=number],
+.request-form select,
+.request-form textarea {
+    border: 2px solid var(--form-border-color);
+    border-radius: 3px;
+    min-height: 40px;
+    padding: 10px;
+    font-size: 14px;
+}
+.request-form .nf-field-element select {
+    height: 40px;
+}
+
+.request-form label {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.request-form input[type=button] {
+    background-color: var(--form-button-bg-color);
+    color: var(--invert-color);
+    font-size: 12px;
+    font-weight: 200;
+    text-transform: uppercase;
+    padding: 0px 40px;
+    border-radius: 30px;
+    height: 42px;
+}
+.request-form .submit-container .nf-field-element {
+    text-align: right;
+}
+
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 90px 150px;
+    font-size: 14px;
+    line-height: 24px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+footer section {
+    margin: 0;
+    padding: 0;
+}
+
+footer section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+footer .contact li {
+    font-size: 13px;
+    line-height: 30px;
+}
+footer .contact li:before {
+    content: none;
+}
+footer .social ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25px);
+}
+footer .address {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+footer .address svg {
+    width: 140px;
+    height: 100px;
+}
+footer .address svg * {
+    fill: var(--invert-color);
+}
+
+footer section ul li svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--invert-color);
+}
+
+footer section ul li a {
+    color: var(--invert-color);
+}
+
+footer address {
+    word-wrap: break-word;
+    white-space: normal;
+    font-style: normal;
+}

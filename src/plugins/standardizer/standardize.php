@@ -35,6 +35,12 @@ function switch_to_relative_url($html, $id, $caption, $title, $align, $url, $siz
 }
 add_filter('image_send_to_editor','switch_to_relative_url', 10, 8);
 
+function cc_mime_types($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types', 1, 1);
+
 // Display the XHTML generator that is generated on the wp_head hook, WP version
 remove_action('wp_head', 'wp_generator'); 
 // Display the links to the extra feeds such as category feeds

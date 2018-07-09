@@ -1,0 +1,223 @@
+@media all and (min-width: 1281px) {
+    h1 {
+        font-size: 4em;
+        line-height: 60px;
+        margin: 40px 0 100px;
+    }
+    h2 {
+        font-size: 1.8em;
+        line-height: 1.5em;
+    }
+    h3 {
+        font-size: 1.1em;
+        line-height: 30px;
+        font-weight: 600;
+        margin: 40px 0 100px;
+    }
+    h4 {
+        font-size: 1.3em;
+    }
+    section ul li {
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+    section h5 {
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+    .grid .request-form {
+        padding: 0 120px;
+    }
+    .grid.outside img {
+        right: -100px;
+    }
+    header, 
+    .content > section {
+        padding: 0 10px 0 120px;
+    }
+    table {
+        width: 120%;
+        margin: 0 -50px;
+    }
+}
+@media all and (max-width: 1280px) {
+    h1 {
+        font-size: 3.5em;
+        line-height: 50px;
+        margin: 40px 0 80px;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    h5 {
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+    header > img {
+        width: 10em;
+        height: 8em;
+    }
+    header, 
+    .content > section {
+        padding: 0 10px 0 120px;
+    }
+    section ul li {
+        font-size: 1.1em;
+        line-height: 1.2em;
+    }
+    .grid.outside img {
+        right: -170px;
+    }
+    .grid .request-form {
+        padding: 0 100px;
+    }
+}
+@media all and (max-width: 1160px) {
+    h1 {
+        font-size: 3em;
+    }
+    h3 {
+        font-size: 0.8em;
+        font-weight: 200;
+    }
+    .grid .request-form {
+        padding: 0 90px;
+    }
+}
+@media all and (max-width: 1020px) {
+    h1 {
+        font-size: 40px;
+        line-height: 40px;
+        margin: 40px 0 60px;
+    }
+    h3 {
+        font-size: 0.8em;
+        line-height: .8em;
+        font-weight: 400;
+    }
+    h5 {
+        font-size: 1em;
+    }
+    blockquote > img {
+        height: 2.5em;
+    }
+    section ul li {
+        font-size: 1em;
+    }
+    .nav ul a {
+        font-size: 10px;
+    }
+    .grid-inside {
+        grid-template-rows: 350px;
+    }
+    .grid.outside {
+        grid-template-columns: 1fr 400px 1fr;
+    }
+    .grid.divided > div:first-child {
+        padding: 50px;
+    }
+    .grid .request-form {
+        padding: 0 50px;
+    }
+}
+@media all and (max-width: 950px) {
+    h1 {
+        font-size: 1.5em;
+        line-height: 1.2em;
+        margin: 60px 0 50px;
+    }
+    h3 {
+        font-size: 0.9em;
+        line-height: 1.5em;
+    }
+    ul li {
+        font-size: 0.9em;
+    }
+    section ul {
+        margin-bottom: 50px;
+    }
+    section h2 {
+        font-size: 1.2em;
+    }
+    header > img {
+        width: 6em;
+        height: 4em;
+    }
+    header,
+    .content > section {
+        padding: 0 20px;
+    }
+    header + div.content {
+        grid-template-columns: 1fr;
+    }
+    blockquote > img {
+        height: 2.2em;
+    }
+    .content aside {
+        display: none;
+    }
+    .grid.inside,
+    .grid.outside {
+        display: block;
+    }
+    .grid.inside img {
+        width: 70%;
+        position: relative;
+        left: -20px;
+    }
+    .grid.inside h4, 
+    .grid.inside ul,
+    .grid.outside h4,
+    .grid.outside ul {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .grid.divided {
+        display: block;
+    }
+    .grid.divided > div:first-child {
+        padding: 20px;
+    }
+    .grid.divided > div:last-child h2,
+    .grid.divided .request-form {
+        padding: 20px;
+        margin: 0;
+    }
+    .request-form label {
+        font-size: 0.7em;
+    }
+    table th,
+    table td {
+        padding-left: 15px; 
+    }
+    footer {
+        padding: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+    footer .address {
+        display: block;
+    }
+    footer .contact {
+        white-space: nowrap;
+    }
+    footer svg,
+    footer .social {
+        display: none;
+    }
+    .nav ul {
+        position: static;
+        margin-top: 20px;
+    }
+    .nav .menu-item:before {
+        display: none;
+    }
+    .nav .menu-item {
+        margin: 0;
+        line-height: 28px;
+    }
+    .nav .menu-item a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
